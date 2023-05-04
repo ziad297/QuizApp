@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.AddQuizFragment"
+    android:background="@color/gree">
+
+    <ImageView
+        android:id="@+id/ImgeQuiz"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="142dp"
+        android:src="@drawable/untitled"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+
+        android:id="@+id/QuizName"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_101sdp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="@dimen/_101sdp"
+        android:background="@drawable/edt_style"
+        android:ems="10"
+        android:hint="Quiz Name"
+        android:inputType="text"
+        android:padding="@dimen/_10sdp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImgeQuiz" />
+
+    <EditText
+        android:id="@+id/NumQues"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_101sdp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="@dimen/_101sdp"
+        android:background="@drawable/edt_style"
+        android:ems="10"
+        android:hint="Number Of Questions"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/QuizName" />
+
+    <EditText
+
+        android:id="@+id/Diff"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_101sdp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="@dimen/_101sdp"
+        android:background="@drawable/edt_style"
+        android:ems="10"
+        android:hint="Difficulty"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NumQues" />
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="163dp"
+        android:background="@drawable/button_style"
+        android:text="Next"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Diff" />
+</androidx.constraintlayout.widget.ConstraintLayout>
